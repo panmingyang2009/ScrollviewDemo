@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *View1ConstraintHeight;
 
 @end
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // Size of "Cell" in ScrollView can be changed here.
+    self.View1ConstraintHeight.constant = 380;
 }
 
 - (void)didReceiveMemoryWarning {
